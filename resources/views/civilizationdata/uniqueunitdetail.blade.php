@@ -53,7 +53,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <h2>Strategy</h2>
+                <h2>Strategy </h2>
                 {{ $unitdata ['strategies']}}
             </td>
         </tr>

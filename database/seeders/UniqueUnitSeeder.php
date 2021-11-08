@@ -1011,7 +1011,7 @@ class UniqueUnitSeeder extends Seeder
                 'unitstrategy' => ''
             ],
 
-            //Burmese2 - Battle Elephant --~-- SHARED
+            //Burmese2 - Battle Elephant
             [
                 //Informatiom
                 'isOriginal' => true,
@@ -1046,7 +1046,7 @@ class UniqueUnitSeeder extends Seeder
                 'unitstrategy' => ''
             ],
 
-            //Cumans2 - Steppe Lancer --~-- SHARED
+            //Cumans2 - Steppe Lancer
             [
                 //Informatiom
                 'isOriginal' => true,
@@ -1480,12 +1480,12 @@ class UniqueUnitSeeder extends Seeder
                 //Unit Strategy
                 'unitstrategy' => ''
             ],
-            //Berbers2 - Genitour --~-- SHARED
+            //Berbers2 - Genitour
             [
                 //Informatiom
                 'isOriginal' => true,
                 'unitcode' => 'genitour',
-                'uniticon' => '/uniqueuniticons/geenitour.png',
+                'uniticon' => '/uniqueuniticons/genitour.png',
                 'unitname' => 'Genitour',
                 'introduced' => 'Age of Empires II: The African Kingdoms',
                 'type' => 'Cavalry Archer, Skirmisher',

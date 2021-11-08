@@ -36,7 +36,6 @@
                             <a href='{{ Route ('listofuniqueunit.show', $unitdata ['unitcode'])}}'>{{ $unitdata ['unitname']}}</a>
                         <br>
                         @endforeach
-                            
                     </td></tr>
                     <tr><td>Unique Technolgy</td><td>{{ $civdata ['uniquetechone']}} <br> {{ $civdata ['uniquetechtwo']}}</td></tr>
                     <tr><td>Civilization Bonus</td><td>{{ $civdata ['civsbonus']}}</td></tr>

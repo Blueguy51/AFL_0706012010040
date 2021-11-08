@@ -102,6 +102,7 @@ class UniqueUnitController extends Controller
             "title" => "Unique Unit Details",
             "pagetitle" => "Detail Unique Unit",
             "unitdata" => uniqueunitsdata::where('unitcode', $unitcode)->get()->first()
+            
         ]);
     }
 

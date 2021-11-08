@@ -14,18 +14,20 @@
         <tr> {{-- Sub --}}
             <td>
                 <h2>Description</h2>
-                <p> {{ $unitdata ['unitdes']}} ~In Game Description </p>
+                <p> "{{ $unitdata ['unitdes']}}" ~In Game Description </p>
             </td>
-            <td class="text-center text-middle" colspan="1">
+            <td class="text-center text-middle" colspan="1" rowspan="2">
                 <h1>
                     {{ $unitdata ['unitname']}}
-                    <br>
-                    <img src="{{ $unitdata ['uniticon']}}" width="104px" height="104px">
                 </h1>
+                <br>
+                <img src="{{ $unitdata ['uniticon']}}" width="165px" height="165px">
+                <br>
+                <br>
                 <table class="table table-dark table-striped table-bordered border-light text text-center align-middle">
                     <tr>
                         <td colspan="2">
-                            <h3> {{ $unitdata ['unitname']}} </h3>
+                            <h3>Unit Information</h3>
                         </td>
                     </tr>
                     <tr>
@@ -34,27 +36,89 @@
                     </tr>
                     <tr>
                         <td>Type</td>
-                        <td>{{ $unitdata ['type']}} Civilization</td>
+                        <td>{{ $unitdata ['type']}} Unit</td>
                     </tr>
                     <tr>
-                        <td>Unique Technolgy</td>
-                        <td>{{ $unitdata ['uniquetechone']}} <br> {{ $unitdata ['uniquetechtwo']}}</td>
+                        <td>Civilization</td>
+                        <td>
+                            
+                        </td>
                     </tr>
                     <tr>
-                        <td>Civilization Bonus</td>
-                        <td>{{ $unitdata ['civsbonus']}}</td>
+                        <td>Age</td>
+                        <td>{{ $unitdata ['age']}} Unit</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td colspan="2"><h3>Training</h3></td>
                     </tr>
                     <tr>
-                        <td>Civilization Bonus</td>
-                        <td>{{ $unitdata ['teambonus']}}</td>
+                        <td>Trained at</td>
+                        <td>{{ $unitdata ['trainedat']}}</td>
                     </tr>
+                    <tr>
+                        <td>Training cost</td>
+                        <td>{{ $unitdata ['traincost']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Training time</td>
+                        <td>{{ $unitdata ['traintime']}}</td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td colspan="2"><h3>Unit Statistic</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Hitpoints</td>
+                        <td>{{ $unitdata ['hitpoint']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td>{{ $unitdata ['attack']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Attack bonus</td>
+                        <td>{{ $unitdata ['attackbonus']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Rate of fire</td>
+                        <td>{{ $unitdata ['rateoffire']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Melee armor</td>
+                        <td>{{ $unitdata ['armormelee']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Piercing armor</td>
+                        <td>{{ $unitdata ['armorpierce']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Armor class</td>
+                        <td>{{ $unitdata ['armorclass']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Movement speed</td>
+                        <td>{{ $unitdata ['movement']}}</td>
+                    </tr>
+                    <tr>
+                        <td>Line of sight</td>
+                        <td>{{ $unitdata ['lineofsight']}}</td>
+                    </tr>
+
                 </table>
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="0" rowspan="1">
                 <h2>Strategy </h2>
-                {{ $unitdata ['strategies']}}
+                <p>{{ $unitdata ['unitstrategy']}}</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>Unit Further Statistic </h2>
+                <h4><b>Strong against : </b></h4><p>{{ $unitdata ['strong']}}</p>
+                <h4><b>Weak against : </b></h4><p>{{ $unitdata ['weak']}}</p>
             </td>
         </tr>
     </table>
